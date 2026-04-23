@@ -1,0 +1,190 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.payment-container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Product Info */
+#product-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#product-info img {
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Payment Buttons */
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.payment-methods button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.payment-methods button:hover {
+    background: #2980b9;
+}
+
+/* Payment Sections */
+.method {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Inputs */
+.method input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons inside methods */
+.method button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #27ae60;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.method button:hover {
+    background: #219150;
+}
+
+/* COD text */
+#cod p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+    .payment-container {
+        padding: 15px;
+    }
+
+    .payment-methods {
+        flex-direction: column;
+    }
+
+    .payment-methods button {
+        margin: 5px 0;
+    }
+
+    #product-info img {
+        width: 80px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 601px) and (max-width: 900px) {
+    .payment-container {
+        max-width: 500px;
+    }
+}
+
+/* ================= LAPTOP ================= */
+@media (min-width: 901px) {
+    .payment-container {
+        max-width: 450px;
+    }
+}
+@media (max-width: 480px) {
+
+    .payment-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #product-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #product-info img {
+        width: 120px;
+    }
+
+    .payment-methods {
+        flex-direction: column;
+    }
+
+    .payment-methods button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .method input {
+        font-size: 14px;
+    }
+
+    .method button {
+        font-size: 14px;
+    }
+}
+
+/* ========================= */
+/* 📱 TABLET (iPad) for payment.html*/
+/* ========================= */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .payment-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    #product-info img {
+        width: 100px;
+    }
+
+    .payment-methods button {
+        font-size: 14px;
+    }
+}

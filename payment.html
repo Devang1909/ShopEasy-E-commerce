@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Payment</title>
+  <link rel="stylesheet" href="payment.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="payment-container">
+
+  <h2>💳 Choose Payment Method</h2>
+
+  <!-- Product Info -->
+  <div id="product-info"></div>
+
+  <!-- Payment Options -->
+  <div class="payment-methods">
+    <button onclick="showMethod('upi')">UPI</button>
+    <button onclick="showMethod('card')">Card</button>
+    <button onclick="showMethod('cod')">COD</button>
+  </div>
+
+  <!-- UPI -->
+  <div id="upi" class="method">
+    <input type="text" placeholder="Enter UPI ID (example@upi)">
+    <button onclick="payNow()">Pay via UPI</button>
+  </div>
+
+  <!-- Card -->
+  <div id="card" class="method">
+    <input type="text" placeholder="Card Number">
+    <input type="text" placeholder="MM/YY">
+    <input type="password" placeholder="CVV">
+    <button onclick="payNow()">Pay via Card</button>
+  </div>
+
+  <!-- COD -->
+  <div id="cod" class="method">
+    <p>Cash on Delivery available</p>
+    <button onclick="payNow()">Place Order</button>
+  </div>
+
+</div>
+
+<script src="payment.js"></script>
+</body>
+</html>
